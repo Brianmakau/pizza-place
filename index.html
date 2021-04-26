@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/scripts.css">
   <title>Pizza Place</title>
@@ -11,32 +13,34 @@
 <body>
   <div class="order">
     <h1>WELCOME</h1>
-    <P>Place your orrders below</P>
+    <P><strong>Place your orders below </strong></P>
     <form id= "form2" form-action="">
       <label>Pizza size</label>
        <select name="size" class="input" id="size">
          <option value="small -Ksh.400">Small</option>
          <option value="medium -Ksh.800">Medium</option>
          <option value="large -Ksh.1000">Large</option>
-       </select><br>
+       </select><br><br><br>
+
       <label>Pizza crust</label>
        <select name="Crust" class="input" id="crust">
          <option value="Crispy -Ksh.300">Crispy</option>
          <option value="Stuffed -Ksh.350">Stuffed</option>
          <option value="Gluten-free -Ksh.200">Gluten-free</option>
-       </select><br>
+       </select><br><br><br>
+
       <label>Pizza toppings</label>
       <select name="toppings" id="toppings">
-         <option value="Pepperoni -Ksh.250">Pepperoni</option>
+         <option value="Pepperoni -Ksh.250">Green Pepper</option>
          <option value="Bacon -Ksh.300">Bacon</option>
-         <option value="Sausage -Ksh.200">Sausage</option>
-       </select><br>
+         <option value="Sausage -Ksh.200">chicken</option>
+       </select><br><br><br>
 
        Delivery:<br>
        <select id="delivery-option">
           <option value="1">Delivery</option>
           <option value="2">No Delivery</option>
-      </select><br><br>
+      </select><br><br><br><br>
        <label>Quantity</label>
          <input type="number" class="input"value="" id="quantity">
          <button type="submit" class="btn btn-outline-danger"  id="order">Order</button>
