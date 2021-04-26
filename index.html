@@ -4,45 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/scripts.css" rel="stylesheet" type="text/css">
-  <title>Pizza</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/scripts.css">
+  <title>Pizza Place</title>
 </head>
 <body>
-  <h1>ORDER YOUR PIZZA</h1>
-  <div class="landing">
-  <p><strong>Choose your size</strong> <em>(Required)</em></p>
-  <form>
-    <input type="radio" id="small" name="size" value="small">
-    <label for="small">Small</label><br>
-    <input type="radio" id="medium" name="size" value="medium">
-    <label for="medium">Medium</label><br>
-    <input type="radio" id="large" name="size" value="large">
-    <label for="large">Large</label>
+  <div class="order">
+    <h1>WELCOME</h1>
+    <P>Place your orrders below</P>
+    <form id= "form2" form-action="">
+      <label>Pizza size</label>
+       <select name="size" class="input" id="size">
+         <option value="small -Ksh.400">Small</option>
+         <option value="medium -Ksh.800">Medium</option>
+         <option value="large -Ksh.1000">Large</option>
+       </select><br>
+      <label>Pizza crust</label>
+       <select name="Crust" class="input" id="crust">
+         <option value="Crispy -Ksh.300">Crispy</option>
+         <option value="Stuffed -Ksh.350">Stuffed</option>
+         <option value="Gluten-free -Ksh.200">Gluten-free</option>
+       </select><br>
+      <label>Pizza toppings</label>
+      <select name="toppings" id="toppings">
+         <option value="Pepperoni -Ksh.250">Pepperoni</option>
+         <option value="Bacon -Ksh.300">Bacon</option>
+         <option value="Sausage -Ksh.200">Sausage</option>
+       </select><br>
+
+       Delivery:<br>
+       <select id="delivery-option">
+          <option value="1">Delivery</option>
+          <option value="2">No Delivery</option>
+      </select><br><br>
+       <label>Quantity</label>
+         <input type="number" class="input"value="" id="quantity">
+         <button type="submit" class="btn btn-outline-danger"  id="order">Order</button>
+         
   </form>
-  <p><strong>Choose the type of crust you would like</strong> <em>(Required)</em></p>
-  <form>
-    <input type="radio" id="crispy" name="crust" value="crusty">
-    <label for="crusty">crusty</label><br>
-    <input type="radio" id="stuffed" name="crust" value="stuffed">
-    <label for="stuffed">Stuffed</label><br>
-    <input type="radio" id="gluten-free" name="crust" value="gluten-free">
-    <label for="gluten-free">Gluten-free</label>
-  </form>
-  <p><strong>toppings</strong> <em>(Choose at most three)</em></p>  
-  <form>
-    <input type="radio" id="pepper" name="toppings" value="pepper">
-    <label for="pepper">pepper</label><br>
-    <input type="radio" id="mushroom" name="toppings" value="mushrooms">
-    <label for="mushrooms">mushrooms</label><br>
-    <input type="radio" id="sweet corn" name="toppings" value="sweet corn">
-    <label for="sweet corn">Sweet corn</label>
-    <input type="radio" id="pineapple" name="toppings" value="pineapple">
-    <label for="pineapple">Pineapple</label><br>
-    <input type="radio" id="bacon" name="toppings" value="bacon">
-    <label for="bacon">Bacon</label><br>
-    <input type="radio" id="chicken" name="toppings" value="chicken">
-    <label for="chicken">Chicken</label><br>
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+
   </div>
-  </form>
 </body>
 </html>
