@@ -13,8 +13,8 @@
 <body>
   <div class="order">
     <h1>WELCOME</h1>
-    <P><strong>Place your orders below </strong></P>
     <form id= "form2" form-action="">
+      <P><strong>Place your orders below </strong></P>
       <label>Pizza size</label>
        <select name="size" class="input" id="size">
          <option value="small -Ksh.400">Small</option>
@@ -32,9 +32,9 @@
       <label>Pizza toppings</label>
       <select name="toppings" id="toppings">
          <option value="Green Pepper -Ksh.250">Green Pepper</option>
-         <option value="Bacon -Ksh.300">Bacon</option>
+         <option value="Bacon -Ksh.100">Bacon</option>
          <option value="Chicken -Ksh.200">Chicken</option>
-         <option value="Mushroom -Ksh.400">mushroom</option>
+         <option value="Mushroom -Ksh.250">mushroom</option>
        </select><br><br><br>
 
        Delivery:<br>
@@ -47,7 +47,24 @@
          <button type="submit" class="btn btn-outline-danger"  id="order">Order</button>
     </form>
   </div> 
-  <script src="js/jquery-3.6.0.js" > </script>
+  <div class="contact">
+    <p><strong>Leave your feedback below</strong></p>
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="nairobi">Nairobi</option>
+        <option value="mombasa">Mombasa</option>
+        <option value="kitui">Kitui</option>
+      </select>
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+    <script src="js/jquery-3.6.0.js" > </script>
   <script src="js/scripts.js"> </script>
 </body>
 </html>
