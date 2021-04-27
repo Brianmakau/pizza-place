@@ -13,28 +13,28 @@
 <body>
   <div class="order">
     <h1>WELCOME</h1>
-    <form id= "form2" form-action="">
+    <form id="form2" action="">
       <P><strong>Place your orders below </strong></P>
       <label>Pizza size</label>
        <select name="size" class="input" id="size">
-         <option value="small -Ksh.400">Small</option>
-         <option value="medium -Ksh.800">Medium</option>
-         <option value="large -Ksh.1000">Large</option>
+         <option value="small">Small</option>
+         <option value="medium">Medium</option>
+         <option value="large">Large</option>
        </select><br><br><br>
 
       <label>Pizza crust</label>
-       <select name="Crust" class="input" id="crust">
-         <option value="Crispy -Ksh.300">Crispy</option>
-         <option value="Stuffed -Ksh.350">Stuffed</option>
-         <option value="Gluten-free -Ksh.200">Gluten-free</option>
+       <select name="crust" class="input" id="crust">
+         <option value="crispy">Crispy</option>
+         <option value="stuffed">Stuffed</option>
+         <option value="gluten-free">Gluten-free</option>
        </select><br><br><br>
 
       <label>Pizza toppings</label>
       <select name="toppings" id="toppings">
-         <option value="Green Pepper -Ksh.250">Green Pepper</option>
-         <option value="Bacon -Ksh.100">Bacon</option>
-         <option value="Chicken -Ksh.200">Chicken</option>
-         <option value="Mushroom -Ksh.250">mushroom</option>
+         <option value="green">Green Pepper</option>
+         <option value="bacon">Bacon</option>
+         <option value="chicken">Chicken</option>
+         <option value="mushroom">mushroom</option>
        </select><br><br><br>
 
        Delivery:<br>
@@ -42,29 +42,32 @@
           <option value="1">Delivery</option>
           <option value="2">No Delivery</option>
       </select><br><br><br><br>
-       <label>Quantity</label>
-         <input type="number" class="input"value="" id="quantity">
-         <button type="submit" class="btn btn-outline-danger"  id="order">Order</button>
+      <label>Quantity</label>
+      <input type="number" class="input" value="1" id="quantity">
+      <button type="submit" class="btn btn-danger" id="order">Order</button>
     </form>
   </div> 
+
   <div class="contact">
     <p><strong>Leave your feedback below</strong></p>
     <form>
       <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
       <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
       <label for="country">Country</label>
       <select id="country" name="country">
         <option value="nairobi">Nairobi</option>
         <option value="mombasa">Mombasa</option>
         <option value="kitui">Kitui</option>
-      </select>
+      </select><br>
       <label for="subject">Subject</label>
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
       <input type="submit" value="Submit">
     </form>
-    <script src="js/jquery-3.6.0.js" > </script>
+  </div>
+
+  <script src="js/jquery-3.6.0.js" > </script>
   <script src="js/scripts.js"> </script>
 </body>
 </html>
