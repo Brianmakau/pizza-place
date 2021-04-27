@@ -11,9 +11,17 @@ h1 {
 #form2 {
   text-align: center;
   font-family: 'Original Surfer', cursive;
-  background-color: white;
+  background-image: url("../img/pizza.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background:transparent
+}
+.contact {
+  padding:20px;
+  text-align: center;
+  font-family: 'Original Surfer', cursive;
+  font-size: 20px;
+}
+textarea {
+  text-align: left;
 }
